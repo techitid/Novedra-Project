@@ -336,7 +336,13 @@ img.border-space {
   }
 }
 @media (max-width:992px) {
-
+.batch-cont {
+    display: block;
+    margin: 0 auto;
+}
+.batch-card {
+    margin: 0 auto 30px;
+}
   .container {
     flex-direction: column;
     text-align: center;

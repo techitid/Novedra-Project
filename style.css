@@ -340,7 +340,12 @@ img.border-space {
     display: block;
     margin: 0 auto;
 }
-
+.pricing-section {
+    padding: 40px 15px;
+}
+.schedule-section {
+    padding-bottom: 0px;
+}
 .schedule-section .batch-card {
     margin: 0 auto 30px;
         width: 100%;

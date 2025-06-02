@@ -801,6 +801,7 @@ border: 1px solid #110A6A4D;
 .batch-wrapper {
     max-width: 1191px;
     margin: 0 auto;
+    padding: 0px 15px;
 }
 
 .batch-card {

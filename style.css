@@ -343,6 +343,8 @@ img.border-space {
 
 .schedule-section .batch-card {
     margin: 0 auto 30px;
+        width: 100%;
+
 }
   .container {
     flex-direction: column;

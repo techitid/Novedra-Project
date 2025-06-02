@@ -423,7 +423,7 @@ body {
 .card:nth-child(1){
     background: #E8F0FA;
 }
-.pricing-section .card:nth-child(2){
+.pricing-section .pinkcard{
    background: #FCEEFF;
 
 }

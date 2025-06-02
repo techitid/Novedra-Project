@@ -336,12 +336,12 @@ img.border-space {
   }
 }
 @media (max-width:992px) {
-.batch-cont {
+.schedule-section .batch-cont {
     display: block;
     margin: 0 auto;
 }
 
-.batch-card {
+.schedule-section .batch-card {
     margin: 0 auto 30px;
 }
   .container {

@@ -29,3 +29,19 @@ headers.forEach(header => {
     arrowImg.alt = isActive ? 'Up arrow' : 'Down arrow';
   });
 });
+
+
+  // Disable right-click
+  document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+  // Disable F12, Ctrl+Shift+I, Ctrl+U, etc.
+  document.addEventListener("keydown", (e) => {
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) ||
+      (e.ctrlKey && e.key === "U")
+    ) {
+      e.preventDefault();
+    }
+  });
+

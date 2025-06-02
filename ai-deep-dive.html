@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>AI Skills Section</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===========================
+       Navbar Section Start
+  ============================ -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/novedra-logo.png" alt="Novedra Logo" title="Novedra Logo">
+      </a>
+    </div>
+    <div class="menu" id="menu">
+      <!-- Dropdown Menu -->
+      <div class="dropdown">
+        <div class="dropdown-toggle">Resources <span class="dropdown-icon"></span></div>
+        <div class="dropdown-menu">
+          <a href="#">Resources 1</a>
+          <a href="#">Resources 2</a>
+          <a href="#">Resources 3</a>
+        </div>
+      </div>
+      <a href="#">Pricing</a>
+      <a href="#">Login</a>
+      <div class="menu-btn">
+        <button class="signup-btn">Sign up</button>
+      </div>
+    </div>
+    <!-- Hamburger Menu for Mobile -->
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+  <!-- ===========================
+       Navbar Section End
+  ============================ -->
+
+  <!-- ===========================
+       Hero Section Start
+  ============================ -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="left-content">
+        <span class="tagline">From Zero to AI Developer — Learn, Build, and Deploy with Confidence</span>
+        <h1>Build Real-World AI Skills</h1>
+        <p>
+          Master the full stack of Artificial Intelligence from fundamentals and Python coding to Large Language Models, AI agents, and computer vision. Whether you're starting fresh or leveling up, this hands-on course gives you the skills to build real-world AI projects using tools like OpenAI, LangChain, and OpenCV.
+        </p>
+      </div>
+      <div class="right-box">
+        <h3>Get started now</h3>
+        <button class="hero-btn register-btn">Register for your seat</button>
+        <button class="hero-btn reserve-seat-btn">Pay to reserve your seat</button>
+        <img src="images/hero-sec-border-image.png" alt="horizontal-border" title="horizontal-border" class="border-space">
+        <p class="question">
+          Have questions?<br>
+          <a href="#" class="talk-team-link">Talk to the team <span><img src="images/arrow-icon.png" alt="Arrow Icon" title="Arrow Icon"></span></a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ===========================
+       Hero Section End
+  ============================ -->
+
+  <!-- ===========================
+       Pricing Section Start
+  ============================ -->
+  <section class="pricing-section">
+    <div class="container">
+      <h2 class="main-heading">Choose Your Learning Path</h2>
+      <p class="subtitle">Three comprehensive tracks designed to take you from beginner to AI expert</p>
+
+      <div class="cards">
+
+        <!-- Card 1 - AI Foundation -->
+        <a href="ai-foundation.html" style="text-decoration: none; color: inherit;">
+        <div class="card">
+            <div class="badge">2 weeks</div>
+            <h3 class="title">AI Foundation</h3>
+            <p class="description">
+              Perfect for beginners. Learn AI fundamentals, Python programming, and build your first ML models.
+            </p>
+            <div class="price-tag">
+              <span class="label">Early bird</span>
+              <h4>$25</h4>
+            </div>
+            <ul class="features">
+              <li>AI & ML Fundamentals</li>
+              <li>Python Programming</li>
+              <li>Prompt Engineering</li>
+              <li>LangChain Basics</li>
+              <li>Computer Vision</li>
+              <li>Real-world Projects</li>
+            </ul>
+            <button class="btn" onclick="window.location.href='/blob/main/ai-foundation.html'">Register for your seat</button>
+          
+        </div>
+        </a>
+        <!-- Card 2 - AI Deep Dive -->
+        <a href="#" style="text-decoration: none; color: inherit;">
+        <div class="card pinkcard">
+		
+          <div class="badge">2 weeks</div>
+          <h3 class="title">AI Deep Dive</h3>
+          <p class="description">
+            Advanced concepts for those ready to build sophisticated AI systems and agents.
+          </p>
+          <div class="price-tag">
+            <span class="label">Early bird</span>
+            <h4>$50</h4>
+          </div>
+          <ul class="features">
+            <li>Advanced Prompt Engineering</li>
+            <li>LLMs & Multimodal Models</li>
+            <li>LangChain, LangFlow, LangGraph</li>
+            <li>RAG Deep Dive</li>
+            <li>AI Agent Implementation</li>
+            <li>Industry Projects</li>
+          </ul>
+          <button class="btn" onclick="window.location.href='/blob/main/ai-foundation.html'">Register for your seat</button>
+		  
+        </div>
+</a>
+        <!-- Card 3 - AI Advanced -->
+       <a href="#" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <div class="badge">2 weeks</div>
+          <h3 class="title">AI Advanced</h3>
+          <p class="description">
+            Master-level curriculum covering multi-agent systems and multimedia AI applications.
+          </p>
+          <div class="price-tag">
+            <span class="label">Early bird</span>
+            <h4>$50</h4>
+          </div>
+          <ul class="features">
+            <li>Multimedia Intelligence</li>
+            <li>Multi-Agent AI Systems</li>
+            <li>Advanced AI Frameworks</li>
+            <li>AI & Computer Vision</li>
+            <li>Production Deployment</li>
+            <li>Capstone Projects</li>
+          </ul>
+          <button class="btn">Register for your seat</button>
+        </div>
+       </a>
+      </div>
+    </div>
+  </section>
+  <!-- ===========================
+       Pricing Section End
+  ============================ -->
+
+  <!-- ===========================
+       Footer Section Start
+  ============================ -->
+  <footer class="footer">
+    <div class="cta-container">
+      <div class="cta-box">
+        <h2>Start learning new things <br>& build your skills today</h2>
+        <div class="buttons">
+          <button class="footer-btn footer-reg-btn">Register for your seat</button>
+          <button class="footer-btn footer-pay-btn">Pay to reserve your seat</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-sec">
+      <p>© Copyright 2025, All Rights Reserved</p>
+      <div class="footer-links">
+        <a href="#">Support</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  <!-- ===========================
+       Footer Section End
+  ============================ -->
+<script src="script.js"></script>
+ <!-- ===============================================
+ Script: Save & Highlight Selected Pricing Plan Start
+ ================================================= -->
+  <script>
+  // Select all pricing cards
+  const cards = document.querySelectorAll('.card');
+
+  //On page load: Check if a plan was previously selected and saved in localStorage
+  const selectedPlan = localStorage.getItem('selectedPlan');
+  if (selectedPlan !== null) {
+    cards.forEach((card, index) => {
+      // If index matches saved plan, add 'active' class to highlight it
+      if (index == selectedPlan) {
+        card.classList.add('active');
+      } else {
+        // Remove 'active' class from all other cards
+        card.classList.remove('active');
+      }
+    });
+  }
+
+  // When a user clicks a card, save the selected index in localStorage
+  cards.forEach((card, index) => {
+    card.addEventListener('click', () => {
+      localStorage.setItem('selectedPlan', index); // Save user's choice
+    });
+  });
+</script>
+<!-- ==============================================
+ Script: Save & Highlight Selected Pricing Plan End
+ =============================================== -->
+</body>
+</html>

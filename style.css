@@ -173,7 +173,7 @@ Hero Section Style Start Here
 .hero-section {
 	padding: 87px 15px 24px;
 	position: relative;
-	background-image: url(images/banner-image.png);
+	background-image: url(images/home-banner-bg.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

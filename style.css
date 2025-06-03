@@ -357,11 +357,9 @@ Pricing Section Style Start Here
 .pricing-section .card:nth-child(1) {
 	background: #e8f0fa;
 }
-
-.pricing-section .pricing-section .pinkcard {
-	background: #fceeff;
+.pricing-section .card.pinkcard {
+    background: #FCEEFF;
 }
-
 .pricing-section .card:nth-child(3) {
 	background: #e8f0fa;
 }

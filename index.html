@@ -1054,36 +1054,5 @@
        Footer Section End
   ============================ -->
 <script src="script.js"></script>
- <!-- ===============================================
- Script: Save & Highlight Selected Pricing Plan Start
- ================================================= -->
-  <script>
-  // Select all pricing cards
-  const cards = document.querySelectorAll('.card');
-
-  //On page load: Check if a plan was previously selected and saved in localStorage
-  const selectedPlan = localStorage.getItem('selectedPlan');
-  if (selectedPlan !== null) {
-    cards.forEach((card, index) => {
-      // If index matches saved plan, add 'active' class to highlight it
-      if (index == selectedPlan) {
-        card.classList.add('active');
-      } else {
-        // Remove 'active' class from all other cards
-        card.classList.remove('active');
-      }
-    });
-  }
-
-  // When a user clicks a card, save the selected index in localStorage
-  cards.forEach((card, index) => {
-    card.addEventListener('click', () => {
-      localStorage.setItem('selectedPlan', index); // Save user's choice
-    });
-  });
-</script>
-<!-- ==============================================
- Script: Save & Highlight Selected Pricing Plan End
- =============================================== -->
 </body>
 </html>

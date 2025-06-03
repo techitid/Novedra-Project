@@ -537,7 +537,7 @@ Accordions Section Style Start Here
 	z-index: 1;
 	overflow: hidden;
 }
-.accordions-section .accordion-pink-bg{
+.accordions-section.accordion-pink-bg{
         background-image: url("images/accordion-pink-bg.png");
 }
 .accordions-section .module.active .accordion-content {

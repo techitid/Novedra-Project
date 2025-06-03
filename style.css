@@ -668,7 +668,7 @@ border-bottom-right-radius: 10px;
   display: block;
 }
 
-.accordions-section .acc-cont-heading, .accordions-section .accordion-content{
+.accordions-section .acc-cont-heading, .accordions-section .order-list li{
     font-family: Inter;
 font-weight: 600;
 font-size: 14px;

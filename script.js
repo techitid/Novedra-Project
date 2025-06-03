@@ -1,6 +1,6 @@
   // Toggle Pricing Plan Details Based on User Selection
   // This script shows details of the selected pricing plan and hides the others
-    const allPlans = document.querySelectorAll('.plan');
+  const allPlans = document.querySelectorAll('.plan');
   const allDetails = document.querySelectorAll('.plan-details');
 
   function activatePlan(planName) {
@@ -17,9 +17,6 @@
     if (targetDetail) {
       targetDetail.classList.add('active');
     }
-
-    // Save to localStorage
-    localStorage.setItem('selectedPlan', planName);
   }
 
   // Handle plan clicks
@@ -30,18 +27,11 @@
     });
   });
 
-  // On page load
-  const savedPlan = localStorage.getItem('selectedPlan');
-
-  if (savedPlan) {
-    activatePlan(savedPlan); // Restore saved plan
-  } else {
-    // Default to first plan if no saved selection
-    const firstPlan = allPlans[0];
-    if (firstPlan) {
-      const defaultPlan = firstPlan.getAttribute('data-plan');
-      activatePlan(defaultPlan);
-    }
+  // Always activate the first plan on page load
+  const firstPlan = allPlans[0];
+  if (firstPlan) {
+    const defaultPlan = firstPlan.getAttribute('data-plan');
+    activatePlan(defaultPlan);
   }
 
 //Responsive Navigation Toggle with Dropdown Support

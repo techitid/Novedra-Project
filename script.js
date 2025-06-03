@@ -2,19 +2,24 @@
   // Toggle Pricing Plan Details Based on User Selection
   // This script shows details of the selected pricing plan and hides the others
 
-  const plans = document.querySelectorAll('.plan');
-  const details = document.querySelectorAll('.plan-details');
+ const allPlans = document.querySelectorAll('.plan');
+  const allDetails = document.querySelectorAll('.plan-details');
 
-  plans.forEach(plan => {
+  allPlans.forEach(plan => {
     plan.addEventListener('click', () => {
-      // Remove 'active' from all
-      plans.forEach(p => p.classList.remove('active'));
-      details.forEach(d => d.classList.remove('active'));
+      const selectedPlan = plan.getAttribute('data-plan');
 
-      // Add 'active' to selected
-      plan.classList.add('active');
-      const targetId = plan.getAttribute('data-plan');
-      const targetDetail = document.getElementById(targetId);
+      // Remove 'active' class from all plans
+      allPlans.forEach(p => p.classList.remove('active'));
+      // Add 'active' to all plans with same data-plan
+      document.querySelectorAll(`.plan[data-plan="${selectedPlan}"]`)
+        .forEach(matchingPlan => matchingPlan.classList.add('active'));
+
+      // Hide all plan details
+      allDetails.forEach(detail => detail.classList.remove('active'));
+
+      // Show the selected plan detail
+      const targetDetail = document.getElementById(selectedPlan);
       if (targetDetail) {
         targetDetail.classList.add('active');
       }

@@ -577,7 +577,7 @@ Accordions Section Style Start Here
       transition: transform 0.3s ease;
     }
 
-.accordions-section .accordion-module.active .arrow-icon {
+.accordions-section .module.active .arrow-icon {
       transform: rotate(180deg);
     }
 
@@ -586,7 +586,7 @@ Accordions Section Style Start Here
       display: none;
     }
 
-    .accordion-module.active .accordion-content {
+    .module.active .accordion-content {
       display: block;
     }
 /*============================

@@ -1000,6 +1000,12 @@ Media Style Start Here
 		max-width: 383px;
 		width: 100%;
 	}
+	/*============================
+	Footer Section Style Start Here
+	============================*/
+	.footer .cta-box h2 {
+       font-size: 36px;
+	}
 }
 
 @media (max-width: 576px) {

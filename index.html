@@ -97,8 +97,7 @@
       <div class="cards">
 
         <!-- Card 1 - AI Foundation -->
-        <a href="ai-foundation.html" style="text-decoration: none; color: inherit;">
-        <div class="card">
+        <div class="plan card active" data-plan="ai-foundation">
             <div class="badge">2 weeks</div>
             <h3 class="title">AI Foundation</h3>
             <p class="description">
@@ -119,10 +118,8 @@
             <button class="btn" onclick="window.location.href='/blob/main/ai-foundation.html'">Register for your seat</button>
           
         </div>
-        </a>
         <!-- Card 2 - AI Deep Dive -->
-        <a href="ai-deep-dive.html" style="text-decoration: none; color: inherit;">
-        <div class="card pinkcard">
+        <div class="plan card pinkcard" data-plan="ai-deep-dive">
 		
           <div class="badge">2 weeks</div>
           <h3 class="title">AI Deep Dive</h3>
@@ -144,10 +141,8 @@
           <button class="btn" onclick="window.location.href='/blob/main/ai-foundation.html'">Register for your seat</button>
 		  
         </div>
-        </a>
         <!-- Card 3 - AI Advanced -->
-        <a href="ai-advanced.html" style="text-decoration: none; color: inherit;">
-        <div class="card">
+        <div class="plan card" data-plan="ai-advanced">
           <div class="badge">2 weeks</div>
           <h3 class="title">AI Advanced</h3>
           <p class="description">
@@ -167,17 +162,17 @@
           </ul>
           <button class="btn">Register for your seat</button>
         </div>
-        </a>
       </div>
     </div>
   </section>
   <!-- ===========================
        Pricing Section End
   ============================ -->
+  <section class="plan-details active" id="ai-foundation">
   <!-- ==========================================
 	AI Foundation Accordions Section Start Here
   =========================================== -->
-  <section class="accordions-section">
+  <div class="accordions-section">
 	  <div class="container">
 		<h2 class="main-heading">What You'll Learn in “AI Foundation”</h2>
 		<p class="subtitle">Comprehensive curriculum covering everything from fundamentals to advanced AI systems</p>
@@ -407,14 +402,14 @@
 
 		</div>
 	  </div>
-	</section>
+	</div>
   <!-- ==========================================
 	AI Foundation Accordions Section End Here
   =========================================== -->
   <!-- =========================================
 	AI Foundation Schedule Section Start Here
   ============================================== -->
-    <section class="schedule-section">
+    <div class="schedule-section">
 	  <div class="container">
 		<h2 class="main-heading">Schedule of “AI Foundation”</h2>
 		<p class="subtitle">Choose the schedule that fits your lifestyle</p>
@@ -489,14 +484,16 @@
 		  </div>
 		</div>
 	  </div>
-  </section>
+  </div>
 <!-- =========================================
 	AI Foundation Schedule Section End Here
   ============================================== -->
+  </section>
+   <section class="plan-details active" id="ai-deep-dive">
   <!-- ===========================================
   AI Deep Dive Accordions Section Start Here
   ============================================ -->
-  <section class="accordions-section">
+  <div class="accordions-section">
 	  <div class="container">
 		<h2 class="main-heading">What You'll Learn in “AI Deep Dive”</h2>
 		<p class="subtitle">Comprehensive curriculum covering everything from fundamentals to advanced AI systems</p>
@@ -653,14 +650,14 @@
 
 		</div>
 	  </div>
-	</section>
+	</div>
   <!-- =========================================
    AI Deep Dive Accordions Section End Here
   ========================================== -->
   <!-- =========================================
 	 AI Deep Dive Schedule Section Start Here
   ============================================== -->
-    <section class="schedule-section">
+    <div class="schedule-section">
 	  <div class="container">
 		<h2 class="main-heading">Schedule of “AI Deep Dive”</h2>
 		<p class="subtitle">Choose the schedule that fits your lifestyle</p>
@@ -735,14 +732,17 @@
 		  </div>
 		</div>
 	  </div>
-  </section>
+  </div>
 <!-- ===========================
  AI Deep Dive Schedule Section End Here
 ============================ -->
+</section>
+<section class="plan-details" id="ai-advanced">
+
 <!-- =======================================
          AI Advanced Accordions Section Start Here
          ======================================== -->
-      <section class="accordions-section">
+      <div class="accordions-section">
          <div class="container">
             <h2 class="main-heading">What You'll Learn in “AI Advanced”</h2>
             <p class="subtitle">Comprehensive curriculum covering everything from fundamentals to advanced AI systems</p>
@@ -869,14 +869,14 @@
                </div>
             </div>
          </div>
-      </section>
+      </div>
       <!-- =======================================
          AI Advanced Accordions Section Start Here
          ======================================== -->
       <!-- =======================================
          AI Advanced Schedule Section Start Here
         ======================================== -->
-      <section class="schedule-section">
+      <div class="schedule-section">
          <div class="container">
             <h2 class="main-heading">Schedule of “AI Advanced”</h2>
             <p class="subtitle">Choose the schedule that fits your lifestyle</p>
@@ -941,93 +941,93 @@
                </div>
             </div>
          </div>
-      </section>
+      </div>
        <!-- =======================================
          AI Advanced Schedule Section Start Here
         ======================================== -->
+		</section>
       <!-- ===========================
-         Pricing Section Start
-         ============================ -->
-      <section class="pricing-section">
-         <div class="container">
-            <h2 class="main-heading">Choose Your Learning Path</h2>
-            <p class="subtitle">Three comprehensive tracks designed to take you from beginner to AI expert</p>
-            <div class="cards">
-               <!-- Card 1 - AI Foundation -->
-               <a href="ai-foundation.html" style="text-decoration: none; color: inherit;">
-                  <div class="card">
-                     <div class="badge">2 weeks</div>
-                     <h3 class="title">AI Foundation</h3>
-                     <p class="description">
-                        Perfect for beginners. Learn AI fundamentals, Python programming, and build your first ML models.
-                     </p>
-                     <div class="price-tag">
-                        <span class="label">Early bird</span>
-                        <h4>$25</h4>
-                     </div>
-                     <ul class="features">
-                        <li>AI & ML Fundamentals</li>
-                        <li>Python Programming</li>
-                        <li>Prompt Engineering</li>
-                        <li>LangChain Basics</li>
-                        <li>Computer Vision</li>
-                        <li>Real-world Projects</li>
-                     </ul>
-                     <button class="btn" onclick="window.location.href='ai-foundation.html'">Register for your seat</button>
-                  </div>
-               </a>
-               <!-- Card 2 - AI Deep Dive -->
-               <a href="ai-deep-dive.html" style="text-decoration: none; color: inherit;">
-                  <div class="card pinkcard">
-                     <div class="badge">2 weeks</div>
-                     <h3 class="title">AI Deep Dive</h3>
-                     <p class="description">
-                        Advanced concepts for those ready to build sophisticated AI systems and agents.
-                     </p>
-                     <div class="price-tag">
-                        <span class="label">Early bird</span>
-                        <h4>$50</h4>
-                     </div>
-                     <ul class="features">
-                        <li>Advanced Prompt Engineering</li>
-                        <li>LLMs & Multimodal Models</li>
-                        <li>LangChain, LangFlow, LangGraph</li>
-                        <li>RAG Deep Dive</li>
-                        <li>AI Agent Implementation</li>
-                        <li>Industry Projects</li>
-                     </ul>
-                     <button class="btn" onclick="window.location.href='ai-foundation.html'">Register for your seat</button>
-                  </div>
-               </a>
-               <!-- Card 3 - AI Advanced -->
-               <a href="ai-advanced.html" style="text-decoration: none; color: inherit;">
-                  <div class="card">
-                     <div class="badge">2 weeks</div>
-                     <h3 class="title">AI Advanced</h3>
-                     <p class="description">
-                        Master-level curriculum covering multi-agent systems and multimedia AI applications.
-                     </p>
-                     <div class="price-tag">
-                        <span class="label">Early bird</span>
-                        <h4>$50</h4>
-                     </div>
-                     <ul class="features">
-                        <li>Multimedia Intelligence</li>
-                        <li>Multi-Agent AI Systems</li>
-                        <li>Advanced AI Frameworks</li>
-                        <li>AI & Computer Vision</li>
-                        <li>Production Deployment</li>
-                        <li>Capstone Projects</li>
-                     </ul>
-                     <button class="btn">Register for your seat</button>
-                  </div>
-               </a>
+       Pricing Section Start
+  ============================ -->
+  <section class="pricing-section">
+    <div class="container">
+      <h2 class="main-heading">Choose Your Learning Path</h2>
+      <p class="subtitle">Three comprehensive tracks designed to take you from beginner to AI expert</p>
+
+      <div class="cards">
+
+        <!-- Card 1 - AI Foundation -->
+        <div class="card active" data-plan="AI Foundation">
+            <div class="badge">2 weeks</div>
+            <h3 class="title">AI Foundation</h3>
+            <p class="description">
+              Perfect for beginners. Learn AI fundamentals, Python programming, and build your first ML models.
+            </p>
+            <div class="price-tag">
+              <span class="label">Early bird</span>
+              <h4>$25</h4>
             </div>
-         </div>
-      </section>
-      <!-- ===========================
-         Pricing Section End
-         ============================ -->
+            <ul class="features">
+              <li>AI & ML Fundamentals</li>
+              <li>Python Programming</li>
+              <li>Prompt Engineering</li>
+              <li>LangChain Basics</li>
+              <li>Computer Vision</li>
+              <li>Real-world Projects</li>
+            </ul>
+            <button class="btn" onclick="window.location.href='/blob/main/ai-foundation.html'">Register for your seat</button>
+          
+        </div>
+        <!-- Card 2 - AI Deep Dive -->
+        <div class="card pinkcard" data-plan="AI Deep Dive">
+		
+          <div class="badge">2 weeks</div>
+          <h3 class="title">AI Deep Dive</h3>
+          <p class="description">
+            Advanced concepts for those ready to build sophisticated AI systems and agents.
+          </p>
+          <div class="price-tag">
+            <span class="label">Early bird</span>
+            <h4>$50</h4>
+          </div>
+          <ul class="features">
+            <li>Advanced Prompt Engineering</li>
+            <li>LLMs & Multimodal Models</li>
+            <li>LangChain, LangFlow, LangGraph</li>
+            <li>RAG Deep Dive</li>
+            <li>AI Agent Implementation</li>
+            <li>Industry Projects</li>
+          </ul>
+          <button class="btn" onclick="window.location.href='/blob/main/ai-foundation.html'">Register for your seat</button>
+		  
+        </div>
+        <!-- Card 3 - AI Advanced -->
+        <div class="card" data-plan="AI Advanced">
+          <div class="badge">2 weeks</div>
+          <h3 class="title">AI Advanced</h3>
+          <p class="description">
+            Master-level curriculum covering multi-agent systems and multimedia AI applications.
+          </p>
+          <div class="price-tag">
+            <span class="label">Early bird</span>
+            <h4>$50</h4>
+          </div>
+          <ul class="features">
+            <li>Multimedia Intelligence</li>
+            <li>Multi-Agent AI Systems</li>
+            <li>Advanced AI Frameworks</li>
+            <li>AI & Computer Vision</li>
+            <li>Production Deployment</li>
+            <li>Capstone Projects</li>
+          </ul>
+          <button class="btn">Register for your seat</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===========================
+       Pricing Section End
+  ============================ -->
   <!-- ===========================
        Footer Section Start
   ============================ -->

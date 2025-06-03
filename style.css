@@ -363,6 +363,9 @@ Pricing Section Style Start Here
 .pricing-section .card.pinkcard {
     background: #FCEEFF;
 }
+.pricing-section .card.purplecard{
+    background:#ece7ff;
+}
 .pricing-section .card:nth-child(3) {
 	background: #e8f0fa;
 }

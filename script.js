@@ -7,6 +7,7 @@
     allPlans.forEach(p => p.classList.remove('active'));
     allDetails.forEach(d => d.classList.remove('active'));
 
+    
     // Activate all matching plans
     document.querySelectorAll(`.plan[data-plan="${planName}"]`)
       .forEach(p => p.classList.add('active'));

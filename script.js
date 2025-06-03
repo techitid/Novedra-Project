@@ -1,3 +1,19 @@
+  const plans = document.querySelectorAll('.plan');
+  const details = document.querySelectorAll('.plan-details');
+
+  plans.forEach(plan => {
+    plan.addEventListener('click', () => {
+      // Remove active class from all
+      plans.forEach(p => p.classList.remove('active'));
+      details.forEach(d => d.classList.remove('active'));
+
+      // Add active class to clicked plan and its detail
+      plan.classList.add('active');
+      const selected = plan.getAttribute('data-plan');
+      document.getElementById(selected).classList.add('active');
+    });
+  });
+
 
   const hamburger = document.getElementById('hamburger');
   const menu = document.getElementById('menu');

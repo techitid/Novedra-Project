@@ -926,7 +926,7 @@ Media Style Start Here
 	============================*/
 	.main-heading,
 	h1,
-	body .cta-box h2 {
+	body .footer .cta-box h2 {
 		font-size: 32px;
 	}
 
@@ -999,12 +999,6 @@ Media Style Start Here
 	.pricing-section .card {
 		max-width: 383px;
 		width: 100%;
-	}
-	/*============================
-	Footer Section Style Start Here
-	============================*/
-	.footer .cta-box h2 {
-       font-size: 36px;
 	}
 }
 

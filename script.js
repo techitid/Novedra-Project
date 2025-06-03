@@ -1,6 +1,6 @@
   // Toggle Pricing Plan Details Based on User Selection
   // This script shows details of the selected pricing plan and hides the others
-  const allPlans = document.querySelectorAll('.plan');
+   const allPlans = document.querySelectorAll('.plan');
   const allDetails = document.querySelectorAll('.plan-details');
 
   function activatePlan(planName) {
@@ -16,19 +16,23 @@
     const targetDetail = document.getElementById(planName);
     if (targetDetail) {
       targetDetail.classList.add('active');
-
-      // If triggered from footer plan, scroll to the detail section
-      setTimeout(() => {
-        targetDetail.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 100); // slight delay ensures element is visible
     }
+
+    return targetDetail; // return this so we can scroll to it later
   }
 
   // Handle plan clicks
   allPlans.forEach(plan => {
     plan.addEventListener('click', () => {
       const selectedPlan = plan.getAttribute('data-plan');
-      activatePlan(selectedPlan);
+      const targetDetail = activatePlan(selectedPlan);
+
+      // Only scroll if clicked plan is from footer
+      if (plan.classList.contains('footer-plan') && targetDetail) {
+        setTimeout(() => {
+          targetDetail.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
     });
   });
 

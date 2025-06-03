@@ -468,7 +468,13 @@ Pricing Section Style Start Here
 	letter-spacing: -0.4px;
 	color: #110a6a;
 }
+.plan-details {
+  display: none;
+}
 
+.plan-details.active {
+  display: block;
+}
 /*============================
 Accordions Section Style Start Here
 ============================*/

@@ -44,7 +44,7 @@
     }
   });
 
-//Accordion Header
+//Accordion
   const headers = document.querySelectorAll('.accordion-header');
 
   headers.forEach(header => {

@@ -7,7 +7,7 @@ Common Style Start Here
 	box-sizing: border-box;
 }
 
-body {
+body,button.btn, button {
 	font-family: "Inter", sans-serif;
 }
 
@@ -454,7 +454,7 @@ Pricing Section Style Start Here
 	margin-right: 8px;
 }
 
-.pricing-section button.btn, button.btn, button {
+.pricing-section button.btn{
 	width: 100%;
 	border-radius: 10px;
 	border-width: 1px;

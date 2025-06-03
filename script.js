@@ -1,3 +1,7 @@
+
+  // Toggle Pricing Plan Details Based on User Selection
+  // This script shows details of the selected pricing plan and hides the others
+
   const plans = document.querySelectorAll('.plan');
   const details = document.querySelectorAll('.plan-details');
 
@@ -18,6 +22,7 @@
   });
 
 
+//Responsive Navigation Toggle with Dropdown Support
   const hamburger = document.getElementById('hamburger');
   const menu = document.getElementById('menu');
   const dropdownToggle = document.querySelector('.dropdown-toggle');

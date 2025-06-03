@@ -849,7 +849,7 @@ Media Style Start Here
 	/*============================
 	Footer Style Start Here
 	============================*/	
-	.footer .cta-box,.footer .footer-bottom-sec {
+	body .footer .cta-box,body .footer .footer-bottom-sec {
         width: 90%;
 	}
 }

@@ -366,10 +366,6 @@ Pricing Section Style Start Here
 .pricing-section .card.purplecard{
     background:#ece7ff;
 }
-.pricing-section .card:nth-child(3) {
-	background: #e8f0fa;
-}
-
 .pricing-section .card .badge {
 	position: absolute;
 	border-radius: 24px;

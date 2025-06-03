@@ -33,6 +33,11 @@
     const defaultPlan = firstPlan.getAttribute('data-plan');
     activatePlan(defaultPlan);
   }
+if (targetDetail && plan.classList.contains('footer-plan')) {
+  setTimeout(() => {
+    targetDetail.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100);
+}
 
 //Responsive Navigation Toggle with Dropdown Support
   const hamburger = document.getElementById('hamburger');

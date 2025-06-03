@@ -13,6 +13,33 @@
 
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
+<style>
+      .plan {
+      border: 2px solid #ccc;
+      padding: 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s ease;
+      flex: 1;
+    }
+
+    .plan.active {
+      border-color: #0e0a67;
+      background-color: #f0f0ff;
+    }
+
+    .plan-details {
+      display: none;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+    }
+
+    .plan-details.active {
+      display: block;
+    }
+  </style>
 </head>
 <body>
 

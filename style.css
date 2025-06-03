@@ -529,13 +529,13 @@ Accordions Section Style Start Here
 	padding: 40px 15px 77.33px;
 	background: #e8f0fa;
 	position: relative;
-	background-image: url(images/accordions-bg.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
 	z-index: 1;
 	overflow: hidden;
+        background-image: url("data:image/svg+xml,const allPlans = document.querySelectorAll('.plan'); const allDetails = document.querySelectorAll('.plan-details'); function activatePlan(planName) %7B // Remove active from all allPlans.forEach(p =%3E p.classList.remove('active')); allDetails.forEach(d =%3E d.classList.remove('active')); // Activate all matching plans document.querySelectorAll(%60.plan%5Bdata-plan='$%7BplanName%7D'%5D%60) .forEach(p =%3E p.classList.add('active')); // Show matching details const targetDetail = document.getElementById(planName); if (targetDetail) %7B targetDetail.classList.add('active'); %7D %7D // Handle plan clicks allPlans.forEach(plan =%3E %7B plan.addEventListener('click', () =%3E %7B const selectedPlan = plan.getAttribute('data-plan'); activatePlan(selectedPlan); %7D); %7D); // Always activate the first plan on page load const firstPlan = allPlans%5B0%5D; if (firstPlan) %7B const defaultPlan = firstPlan.getAttribute('data-plan'); activatePlan(defaultPlan); %7D");
 }
 
 .accordions-section .module.active .accordion-content {

@@ -846,6 +846,12 @@ Media Style Start Here
 	.hero-section .left-content {
 		flex: 1 1 57%;
 	}
+	/*============================
+	Footer Style Start Here
+	============================*/	
+	.footer .cta-box,.footer .footer-bottom-sec {
+        width: 90%;
+	}
 }
 
 @media (max-width: 992px) {

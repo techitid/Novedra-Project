@@ -15,6 +15,8 @@
       dropdownMenu.style.display = dropdownMenu.style.display === 'flex' ? 'none' : 'flex';
     }
   });
+
+//Accordion Header
   const headers = document.querySelectorAll('.accordion-header');
 
   headers.forEach(header => {

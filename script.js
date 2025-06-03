@@ -1,13 +1,14 @@
   // Toggle Pricing Plan Details Based on User Selection
   // This script shows details of the selected pricing plan and hides the others
+
   const allPlans = document.querySelectorAll('.plan');
   const allDetails = document.querySelectorAll('.plan-details');
+
   function activatePlan(planName) {
     // Remove active from all
     allPlans.forEach(p => p.classList.remove('active'));
     allDetails.forEach(d => d.classList.remove('active'));
 
-    
     // Activate all matching plans
     document.querySelectorAll(`.plan[data-plan="${planName}"]`)
       .forEach(p => p.classList.add('active'));
@@ -16,6 +17,11 @@
     const targetDetail = document.getElementById(planName);
     if (targetDetail) {
       targetDetail.classList.add('active');
+
+      // If triggered from footer plan, scroll to the detail section
+      setTimeout(() => {
+        targetDetail.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100); // slight delay ensures element is visible
     }
   }
 
@@ -33,11 +39,6 @@
     const defaultPlan = firstPlan.getAttribute('data-plan');
     activatePlan(defaultPlan);
   }
-if (targetDetail && plan.classList.contains('footer-plan')) {
-  setTimeout(() => {
-    targetDetail.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 100);
-}
 
 //Responsive Navigation Toggle with Dropdown Support
   const hamburger = document.getElementById('hamburger');

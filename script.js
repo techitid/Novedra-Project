@@ -1,28 +1,40 @@
   // Toggle Pricing Plan Details Based on User Selection
   // This script shows details of the selected pricing plan and hides the others
- const allPlans = document.querySelectorAll('.plan');
+  const allPlans = document.querySelectorAll('.plan');
   const allDetails = document.querySelectorAll('.plan-details');
 
+  function activatePlan(planName) {
+    // Remove active from all
+    allPlans.forEach(p => p.classList.remove('active'));
+    allDetails.forEach(d => d.classList.remove('active'));
+
+    // Activate all matching plans
+    document.querySelectorAll(`.plan[data-plan="${planName}"]`)
+      .forEach(p => p.classList.add('active'));
+
+    // Show matching details
+    const targetDetail = document.getElementById(planName);
+    if (targetDetail) {
+      targetDetail.classList.add('active');
+    }
+
+    // Save to localStorage
+    localStorage.setItem('selectedPlan', planName);
+  }
+
+  // Handle plan clicks
   allPlans.forEach(plan => {
     plan.addEventListener('click', () => {
       const selectedPlan = plan.getAttribute('data-plan');
-
-      // Remove 'active' class from all plans
-      allPlans.forEach(p => p.classList.remove('active'));
-      // Add 'active' to all plans with same data-plan
-      document.querySelectorAll(`.plan[data-plan="${selectedPlan}"]`)
-        .forEach(matchingPlan => matchingPlan.classList.add('active'));
-
-      // Hide all plan details
-      allDetails.forEach(detail => detail.classList.remove('active'));
-
-      // Show the selected plan detail
-      const targetDetail = document.getElementById(selectedPlan);
-      if (targetDetail) {
-        targetDetail.classList.add('active');
-      }
+      activatePlan(selectedPlan);
     });
   });
+
+  // On page load, restore previous selection
+  const savedPlan = localStorage.getItem('selectedPlan');
+  if (savedPlan) {
+    activatePlan(savedPlan);
+  }
 
 
 //Responsive Navigation Toggle with Dropdown Support

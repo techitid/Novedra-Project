@@ -15,12 +15,11 @@
       dropdownMenu.style.display = dropdownMenu.style.display === 'flex' ? 'none' : 'flex';
     }
   });
-const headers = document.querySelectorAll('.accordion-header');
+  const headers = document.querySelectorAll('.accordion-header');
 
-headers.forEach(header => {
-  header.addEventListener('click', () => {
-    const module = header.parentElement;
-    module.classList.toggle('active');
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const module = header.parentElement;
+      module.classList.toggle('active');
+    });
   });
-});
-

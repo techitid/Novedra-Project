@@ -678,6 +678,10 @@ vertical-align: middle;
 
     color: #38404A;
 }
+.accordions-section .accordion .order-list li
+{
+margin-bottom:10px;
+}
 .accordions-section .accordion ul {
     list-style-type: none;
     padding-left: 15px;

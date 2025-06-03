@@ -1,4 +1,3 @@
-
   // Toggle Pricing Plan Details Based on User Selection
   // This script shows details of the selected pricing plan and hides the others
  const allPlans = document.querySelectorAll('.plan');

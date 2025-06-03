@@ -573,22 +573,11 @@ Accordions Section Style Start Here
 .accordions-section .arrow {
 	float: right;
 }
-.accordions-section .arrow-icon {
-      transition: transform 0.3s ease;
-    }
-
 .accordions-section .module.active .arrow-icon {
       transform: rotate(180deg);
     }
 
-    .accordion-content {
-      padding: 15px;
-      display: none;
-    }
-
-    .module.active .accordion-content {
-      display: block;
-    }
+ 
 /*============================
 schedule-section Style Start Here
 ============================*/

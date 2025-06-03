@@ -544,6 +544,10 @@ Accordions Section Style Start Here
 .accordions-section.accordion-pink-bg {
     background-image: url("images/accordions-pink-bg.png");
 }
+.accordions-section.accordion-purple-bg {
+    background-image: url("images/accordions-purple-bg.png");
+}
+
 .accordions-section .module.active .accordion-content {
 	display: block;
 }

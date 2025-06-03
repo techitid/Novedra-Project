@@ -3,14 +3,17 @@
 
   plans.forEach(plan => {
     plan.addEventListener('click', () => {
-      // Remove active class from all
+      // Remove 'active' from all
       plans.forEach(p => p.classList.remove('active'));
       details.forEach(d => d.classList.remove('active'));
 
-      // Add active class to clicked plan and its detail
+      // Add 'active' to selected
       plan.classList.add('active');
-      const selected = plan.getAttribute('data-plan');
-      document.getElementById(selected).classList.add('active');
+      const targetId = plan.getAttribute('data-plan');
+      const targetDetail = document.getElementById(targetId);
+      if (targetDetail) {
+        targetDetail.classList.add('active');
+      }
     });
   });
 

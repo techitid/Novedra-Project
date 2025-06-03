@@ -21,12 +21,6 @@ headers.forEach(header => {
   header.addEventListener('click', () => {
     const module = header.parentElement;
     module.classList.toggle('active');
-
-    const arrowImg = header.querySelector('.arrow img');
-    const isActive = module.classList.contains('active');
-
-    arrowImg.src = isActive ? 'images/up-arrow.png' : 'images/down-arrow.png';
-    arrowImg.alt = isActive ? 'Up arrow' : 'Down arrow';
   });
 });
 

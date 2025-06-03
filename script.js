@@ -17,7 +17,6 @@
     });
   });
 
-
   const hamburger = document.getElementById('hamburger');
   const menu = document.getElementById('menu');
   const dropdownToggle = document.querySelector('.dropdown-toggle');

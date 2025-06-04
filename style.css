@@ -887,6 +887,7 @@ Modal Style Start Here
     letter-spacing: -0.4px;
     vertical-align: middle;
     color: #ffffff;
+    width: 100%;
     }
 
     .modal .success-message {

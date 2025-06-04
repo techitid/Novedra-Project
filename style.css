@@ -1111,4 +1111,7 @@ Media Style Start Here
 	.footer-links a:last-child {
 		margin: 0px;
 	}
+       .modal .modal-content {
+               max-width: 90%;
+       }
 }

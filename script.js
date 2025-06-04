@@ -71,34 +71,36 @@
     });
   });
 
-    const modal = document.getElementById("registrationModal");
-    const form = document.getElementById("registrationForm");
-    const successMsg = document.getElementById("successMsg");
+     const modal = document.getElementById("registrationModal");
+  const form = document.getElementById("registrationForm");
+  const successMsg = document.getElementById("successMsg");
 
-    function openModal() {
-      modal.style.display = "block";
+  function openModal() {
+    modal.style.display = "block";
+    form.style.display = "block";        // Ensure form is visible if reopened
+    successMsg.style.display = "none";   // Hide success message on reopen
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+    form.reset();
+    form.style.display = "block";        // Reset form visibility
+    successMsg.style.display = "none";   // Hide message again
+  }
+
+  // Close modal if clicked outside the form
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      closeModal();
     }
+  };
 
-    function closeModal() {
-      modal.style.display = "none";
-      form.reset();
-      successMsg.style.display = "none";
+  // Handle form submission
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent actual form submission
+
+    if (form.checkValidity()) {
+      form.style.display = "none";             // Hide form
+      successMsg.style.display = "block";      // Show success message
     }
-
-    // Close modal if clicked outside the form
-    window.onclick = function(event) {
-      if (event.target === modal) {
-        closeModal();
-      }
-    };
-
-    // Handle form submission
-    form.addEventListener("submit", function(e) {
-      e.preventDefault(); // prevent actual form submission
-      if (form.checkValidity()) {
-        successMsg.style.display = "block";
-        setTimeout(() => {
-          closeModal();
-        }, 2000);
-      }
-    });
+  });

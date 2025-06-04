@@ -845,16 +845,20 @@ Modal Style Start Here
       max-width: 500px;
       position: relative;
     }
-
-    .modal .close {
-      color: #aaa;
-      position: absolute;
-      right: 20px;
-      top: 20px;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
+	.modal .close {
+	    color: #aaa;
+	    position: absolute;
+	    right: 10px;
+	    top: 6px;
+	    font-size: 24px;
+	    cursor: pointer;
+	    width: 25px;
+	    height: 25px;
+	    background-color: #291a61;
+	    line-height: 23px;
+	    text-align: center;
+	    color: #ffffff;
+	}
     .modal label {
       display: block;
       text-align: left;

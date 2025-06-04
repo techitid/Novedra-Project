@@ -872,13 +872,21 @@ Modal Style Start Here
     }
 
     .modal .submit-btn {
-      background-color: #28a745;
-      color: white;
-      font-size: 16px;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
+      border-radius: 10px;
+    border-width: 1px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    background: linear-gradient(91.66deg, #110a6a 26.05%, #6345da 104.52%);
+    border: 1px solid #d9d9d9;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    vertical-align: middle;
+    color: #ffffff;
     }
 
     .modal .success-message {

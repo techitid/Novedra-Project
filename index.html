@@ -13,6 +13,74 @@
 
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
+<style>
+ /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 5% auto;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 500px;
+      position: relative;
+    }
+
+    .close {
+      color: #aaa;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .submit-btn {
+      background-color: #28a745;
+      color: white;
+      font-size: 16px;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .success-message {
+      display: none;
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }</style>
 </head>
 <body>
 
@@ -1052,6 +1120,118 @@
   <!-- ===========================
        Footer Section End
   ============================ -->
+
+  <!-- ===========================
+       
+  ============================ -->
+<!-- Register Course Button -->
+ <button class="btn" onclick="openModal()">Register Course</button>
+
+  <!-- Modal -->
+  <div id="registrationModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>xAI Course Registration</h2>
+      <form id="registrationForm">
+        <label for="fullName">Full Name</label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          placeholder="e.g., John Doe"
+          pattern="[A-Za-z ]{2,}"
+          title="At least 2 letters, letters and spaces only"
+          required
+        />
+
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="e.g., john.doe@example.com"
+          required
+        />
+
+        <label for="password">Create Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Minimum 8 characters"
+          pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
+          title="At least 8 characters with one letter and one number"
+          required
+        />
+
+        <label for="course">Select Course</label>
+        <select id="course" name="course" required>
+          <option value="">-- Select a Course --</option>
+          <option value="intro_ai">Introduction to AI</option>
+          <option value="adv_ml">Advanced Machine Learning</option>
+          <option value="ai_ethics">AI Ethics & Society</option>
+        </select>
+
+        <label for="country">Country/Region</label>
+        <select id="country" name="country" required>
+          <option value="">-- Select Country --</option>
+          <option value="us">United States</option>
+          <option value="in">India</option>
+          <option value="uk">United Kingdom</option>
+          <option value="ca">Canada</option>
+          <option value="au">Australia</option>
+        </select>
+
+        <label for="phone">Phone Number (Optional)</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="e.g., +91 98765 43210"
+          pattern="^\+?\d{7,15}$"
+          title="Enter a valid phone number"
+        />
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+      <div class="success-message" id="successMsg">
+        Registration Successful!
+      </div>
+    </div>
+  </div>
 <script src="script.js"></script>
+<script>
+    const modal = document.getElementById("registrationModal");
+    const form = document.getElementById("registrationForm");
+    const successMsg = document.getElementById("successMsg");
+
+    function openModal() {
+      modal.style.display = "block";
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+      form.reset();
+      successMsg.style.display = "none";
+    }
+
+    // Close modal if clicked outside the form
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+
+    // Handle form submission
+    form.addEventListener("submit", function(e) {
+      e.preventDefault(); // prevent actual form submission
+      if (form.checkValidity()) {
+        successMsg.style.display = "block";
+        setTimeout(() => {
+          closeModal();
+        }, 2000);
+      }
+    });
+  </script>
 </body>
 </html>

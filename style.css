@@ -889,7 +889,9 @@ Modal Style Start Here
     color: #ffffff;
     width: 100%;
     }
-
+   .modal h2 {
+    margin-bottom: 30px;
+   }
     .modal .success-message {
     display: none;
     margin-top: 20px;

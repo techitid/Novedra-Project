@@ -70,3 +70,35 @@
       module.classList.toggle('active');
     });
   });
+
+    const modal = document.getElementById("registrationModal");
+    const form = document.getElementById("registrationForm");
+    const successMsg = document.getElementById("successMsg");
+
+    function openModal() {
+      modal.style.display = "block";
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+      form.reset();
+      successMsg.style.display = "none";
+    }
+
+    // Close modal if clicked outside the form
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+
+    // Handle form submission
+    form.addEventListener("submit", function(e) {
+      e.preventDefault(); // prevent actual form submission
+      if (form.checkValidity()) {
+        successMsg.style.display = "block";
+        setTimeout(() => {
+          closeModal();
+        }, 2000);
+      }
+    });

@@ -93,7 +93,7 @@ Navbar Style Start Here
 	letter-spacing: -0.18px;
 	vertical-align: middle;
 }
-.menu a {
+.menu a:hover{
     background-color: #ffffff;
     color:#221269;
     padding: 1px 15px;

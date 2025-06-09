@@ -94,12 +94,6 @@ Navbar Style Start Here
 	letter-spacing: -0.18px;
 	vertical-align: middle;
 }
-.menu a:hover{
-    background-color: #ffffff;
-    color:#221269;
-    padding: 1px 15px;
-    border-radius: 50px;
-}
 .signup-btn {
 	height: 32px;
 	min-width: 79px;

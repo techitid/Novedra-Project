@@ -237,7 +237,7 @@ Hero Section Style Start Here
 	text-align: center;
 }
 
-.hero-section .right-box h3 {
+.hero-section .right-box h3 a{
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 28px;

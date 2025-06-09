@@ -1094,14 +1094,15 @@ Media Style Start Here
 		gap: inherit;
 	}
 
-	.menu a,
-	.dropdown-toggle {
-		padding: 10px 20px;
-		width: 100%;
-		text-align: left;
-		border-bottom: 1px solid #0c0965;
-		color: #0c0965;
-	}
+    .menu a, .dropdown-toggle {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #0c0965;
+        color: #0c0965;
+        justify-content: inherit;
+        border-radius: 0px;
+    }
         
 	.dropdown:hover .dropdown-menu {
 		display: none;
@@ -1133,7 +1134,7 @@ Media Style Start Here
 
 	.signup-btn {
 		color: #fff;
-		margin: 10px 4px;
+		margin:10px;
 		background: linear-gradient(91.66deg, #110a6a 26.05%, #6345da 104.52%);
 	}
 

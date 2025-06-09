@@ -87,6 +87,7 @@ Navbar Style Start Here
 .menu a:hover {
     background: linear-gradient(91.66deg, #110a6a 26.05%, #6345da 104.52%);
     border: 2px solid #d9d9d9;
+    color:#ffffff;
 }
 .menu a, .dropdown-toggle {
     color: #fff;
@@ -1101,7 +1102,7 @@ Media Style Start Here
 		border-bottom: 1px solid #0c0965;
 		color: #0c0965;
 	}
-
+        
 	.dropdown:hover .dropdown-menu {
 		display: none;
 		/* disable hover on mobile */
@@ -1132,7 +1133,7 @@ Media Style Start Here
 
 	.signup-btn {
 		color: #fff;
-		margin: 10px 20px;
+		margin: 10px 4px;
 		background: linear-gradient(91.66deg, #110a6a 26.05%, #6345da 104.52%);
 	}
 

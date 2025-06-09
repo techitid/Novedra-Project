@@ -767,6 +767,7 @@ Footer Section Style Start Here
 	line-height: 28px;
 	letter-spacing: -0.4px;
 	vertical-align: middle;
+	border:0px;
 }
 
 .footer a:first-child {
@@ -774,7 +775,6 @@ Footer Section Style Start Here
 }
 
 .footer .footer-reg-btn {
-	border: 1px solid #110a6a;
 	color: #ffffff;
 	background: linear-gradient(91.66deg, #110a6a 26.05%, #6345da 104.52%);
 }

@@ -296,11 +296,16 @@ Hero Section Style Start Here
 	margin-bottom:10px;
 }
 
-.hero-section .talk-team-link,
-.hero-section .talk-team-link span {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.hero-section .talk-team-link, .hero-section .talk-team-link span {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    color: #0E0A67;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    font-size: 16px;
 }
 
 .hero-section .talk-team-link span {

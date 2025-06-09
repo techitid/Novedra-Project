@@ -907,14 +907,19 @@ Modal Style Start Here
 /*============================
 Button Hover Style Start Here
 ============================*/
-body .btn-hover-cls {
+body .btn-hover-trans,body .btn-hover-dark{
     transition: all 0.5s ease;
 }
-body .btn-hover-cls:hover {
-    background: linear-gradient(91.66deg, #110a6a 26.05%, #6345da 104.52%);
+body .btn-hover-trans:hover,body .btn-hover-dark:hover {
     border: 1px solid #d9d9d9;
     color: #ffffff;
-}
+} 
+body .btn-hover-dark:hover {
+    background: linear-gradient(91.66deg, #110a6a 26.05%, #6345da 104.52%);
+} 
+body .btn-hover-trans:hover {
+    background: #ffffff;
+} 
 /*============================
 Media Style Start Here
 ============================*/

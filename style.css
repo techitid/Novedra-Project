@@ -339,7 +339,7 @@ Pricing Section Style Start Here
         cursor: pointer;
 }
 
-.pricing-section .card.active {
+.pricing-section .card.active,.pricing-section .card:hover {
 	border: 3px solid #6366f1;
 	box-shadow: 0px 4px 4px 0px #2212691a;
 	padding: 23.33px 7.5px 39.67px;

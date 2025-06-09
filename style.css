@@ -1145,6 +1145,12 @@ Media Style Start Here
 		max-width: 383px;
 		width: 100%;
 	}
+       /*==========================================
+        AI Foundation Schedule Section Start Here
+      =============================================*/
+        .schedule-section .batch-card .sidebar {
+            padding: 10px;
+	}
 }
 
 @media (max-width: 576px) {

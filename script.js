@@ -76,19 +76,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("registrationForm");
   const successMsg = document.getElementById("successMsg");
 
-  if (!modal || !form || !successMsg) {
-    console.error("Modal, form, or success message not found in DOM.");
-    return;
-  }
-
-  // Make functions global so HTML onclick can access them
+  // ✅ Make these functions global
   window.openModal = function () {
+    if (!modal || !form || !successMsg) return;
     modal.style.display = "block";
     form.style.display = "block";
     successMsg.style.display = "none";
   };
 
   window.closeModal = function () {
+    if (!modal || !form || !successMsg) return;
     modal.style.display = "none";
     form.reset();
     form.style.display = "block";
@@ -101,11 +98,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    if (form.checkValidity()) {
-      form.style.display = "none";
-      successMsg.style.display = "block";
-    }
-  });
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (form.checkValidity()) {
+        form.style.display = "none";
+        successMsg.style.display = "block";
+      }
+    });
+  }
 });

@@ -1069,7 +1069,7 @@ Media Style Start Here
 	.main-heading,
 	h1,
 	body .footer .cta-box h2 {
-		font-size: 32px;
+		font-size:27px;
 	}
 
 	/*============================
@@ -1149,6 +1149,9 @@ Media Style Start Here
         .schedule-section .batch-card .sidebar {
             padding: 10px;
 	}
+        .schedule-section .batch-card .content {
+	padding:20px 15px;
+         } 
 }
 
 @media (max-width: 576px) {

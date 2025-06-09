@@ -1044,6 +1044,7 @@ Media Style Start Here
 
 	.hero-section .left-content h1 {
 		font-size: 32px;
+                line-height: 100%;
 	}
 
 	.hero-section .hero-btn {

@@ -27,8 +27,8 @@
       const selectedPlan = plan.getAttribute('data-plan');
       const targetDetail = activatePlan(selectedPlan);
 
-      // Only scroll if clicked plan is from footer
-      if (plan.classList.contains('footer-plan') && targetDetail) {
+      // Only scroll if clicked plan
+      if (plan.classList.contains('choose-plan') && targetDetail) {
         setTimeout(() => {
           targetDetail.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 100);

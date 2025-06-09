@@ -2,7 +2,6 @@
   // This script shows details of the selected pricing plan and hides the others
    const allPlans = document.querySelectorAll('.plan');
   const allDetails = document.querySelectorAll('.plan-details');
-
   function activatePlan(planName) {
     // Remove active from all
     allPlans.forEach(p => p.classList.remove('active'));

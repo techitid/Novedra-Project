@@ -625,8 +625,7 @@ Accordions Section Style Start Here
 schedule-section Style Start Here
 ============================*/
 .schedule-section {
-	padding-top: 73.33px;
-	padding-bottom: 73.33px;
+        padding: 73.33px 15px;
 }
 
 .schedule-section .batch-wrapper {

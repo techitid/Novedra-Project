@@ -1150,8 +1150,14 @@ Media Style Start Here
             padding: 10px;
 	}
         .schedule-section .batch-card .content {
-	padding:20px 15px;
+	   padding:20px 15px;
          } 
+      .schedule-section .batch-card h3 {
+          font-size: 20px;
+      }
+     .schedule-section .batch-wrapper {
+         padding:0px;
+     }
 }
 
 @media (max-width: 576px) {

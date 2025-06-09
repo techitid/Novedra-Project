@@ -910,17 +910,13 @@ Button Hover Style Start Here
 body .btn-hover-trans,body .btn-hover-dark{
     transition: all 0.3s ease;
 }
-body .btn-hover-trans:hover,body .btn-hover-dark:hover {
-    border: 1px solid #d9d9d9;
-    
-} 
 body .btn-hover-dark:hover {
     background: linear-gradient(91.66deg, #110a6a 26.05%, #6345da 104.52%);
 	color: #ffffff;
 } 
 body .btn-hover-trans:hover {
-    background: #ffffff;
-    color: #110a6a;
+    background: linear-gradient(91.66deg, #06024f 26.05%, #2400b3 104.52%);
+    border: 1px solid #d9d9d9;
 } 
 /*============================
 Media Style Start Here

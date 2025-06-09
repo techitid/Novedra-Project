@@ -908,6 +908,7 @@ Modal Style Start Here
 Button Hover Style Start Here
 ============================*/
 body .btn-hover-cls {
+    transition: all 0.3s ease;
 }
 body .btn-hover-cls:hover {
     background: linear-gradient(91.66deg, #110a6a 26.05%, #6345da 104.52%);

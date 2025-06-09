@@ -71,36 +71,38 @@
     });
   });
 
-     const modal = document.getElementById("registrationModal");
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("registrationModal");
   const form = document.getElementById("registrationForm");
   const successMsg = document.getElementById("successMsg");
 
-  function openModal() {
+  // Make the functions available globally so they work with onclick=""
+  window.openModal = function () {
     modal.style.display = "block";
     form.style.display = "block";        // Ensure form is visible if reopened
     successMsg.style.display = "none";   // Hide success message on reopen
-  }
+  };
 
-  function closeModal() {
+  window.closeModal = function () {
     modal.style.display = "none";
     form.reset();
-    form.style.display = "block";        // Reset form visibility
-    successMsg.style.display = "none";   // Hide message again
-  }
+    form.style.display = "block";
+    successMsg.style.display = "none";
+  };
 
-  // Close modal if clicked outside the form
-  window.onclick = function(event) {
+  // Close modal if clicked outside of modal content
+  window.onclick = function (event) {
     if (event.target === modal) {
       closeModal();
     }
   };
 
-  // Handle form submission
-  form.addEventListener("submit", function(e) {
-    e.preventDefault(); // prevent actual form submission
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent real submission
 
     if (form.checkValidity()) {
-      form.style.display = "none";             // Hide form
-      successMsg.style.display = "block";      // Show success message
+      form.style.display = "none";
+      successMsg.style.display = "block";
     }
   });
+});

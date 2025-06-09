@@ -277,7 +277,7 @@ Hero Section Style Start Here
 	margin-bottom: 0px;
 }
 
-.hero-section .right-box .question {
+.hero-section .right-box .question a{
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 28px;

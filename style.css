@@ -908,7 +908,7 @@ Modal Style Start Here
 Button Hover Style Start Here
 ============================*/
 body .btn-hover-trans,body .btn-hover-dark{
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 body .btn-hover-trans:hover,body .btn-hover-dark:hover {
     border: 1px solid #d9d9d9;

@@ -2,6 +2,7 @@
   // This script shows details of the selected pricing plan and hides the others
    const allPlans = document.querySelectorAll('.plan');
   const allDetails = document.querySelectorAll('.plan-details');
+
   function activatePlan(planName) {
     // Remove active from all
     allPlans.forEach(p => p.classList.remove('active'));
@@ -70,40 +71,36 @@
     });
   });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const modal = document.getElementById("registrationModal");
+     const modal = document.getElementById("registrationModal");
   const form = document.getElementById("registrationForm");
   const successMsg = document.getElementById("successMsg");
 
-  // ✅ Make functions global
-  window.openModal = function () {
-    if (!modal) return;
+  function openModal() {
     modal.style.display = "block";
-    form.style.display = "block";
-    successMsg.style.display = "none";
-  };
+    form.style.display = "block";        // Ensure form is visible if reopened
+    successMsg.style.display = "none";   // Hide success message on reopen
+  }
 
-  window.closeModal = function () {
-    if (!modal) return;
+  function closeModal() {
     modal.style.display = "none";
     form.reset();
-    form.style.display = "block";
-    successMsg.style.display = "none";
-  };
+    form.style.display = "block";        // Reset form visibility
+    successMsg.style.display = "none";   // Hide message again
+  }
 
-  window.onclick = function (event) {
+  // Close modal if clicked outside the form
+  window.onclick = function(event) {
     if (event.target === modal) {
       closeModal();
     }
   };
 
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (form.checkValidity()) {
-        form.style.display = "none";
-        successMsg.style.display = "block";
-      }
-    });
-  }
-});
+  // Handle form submission
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent actual form submission
+
+    if (form.checkValidity()) {
+      form.style.display = "none";             // Hide form
+      successMsg.style.display = "block";      // Show success message
+    }
+  });

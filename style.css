@@ -905,6 +905,16 @@ Modal Style Start Here
     font-size: 20px;
 }
 /*============================
+Button Hover Style Start Here
+============================*/
+body .btn-hover-cls {
+}
+body .btn-hover-cls:hover {
+    background: linear-gradient(91.66deg, #110a6a 26.05%, #6345da 104.52%);
+    border: 1px solid #d9d9d9;
+    color: #ffffff;
+}
+/*============================
 Media Style Start Here
 ============================*/
 

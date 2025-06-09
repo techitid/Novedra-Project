@@ -1156,6 +1156,13 @@ Media Style Start Here
      .schedule-section .batch-wrapper {
          padding:0px;
      }
+	.schedule-section .batch-card .day {
+	    width: 30px;
+	    height: 30px;
+	    border-radius: 30px;
+	    font-size: 15px;
+	    padding: 10px;
+	}
 }
 
 @media (max-width: 576px) {

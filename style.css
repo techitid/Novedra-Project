@@ -921,6 +921,7 @@ body .btn-hover-trans:hover {
 } 
 .link {
     text-decoration: none;
+    display:inline-block;
 }
 .link:hover {
     text-decoration: underline;

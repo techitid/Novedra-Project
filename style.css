@@ -246,6 +246,7 @@ Hero Section Style Start Here
 	color: #0c0965;
 	margin-top: 20px;
 	margin-bottom: 10px;
+        display:inline-block;
 }
 
 .hero-section .hero-btn {

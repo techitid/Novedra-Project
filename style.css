@@ -920,6 +920,12 @@ body .btn-hover-trans:hover {
     background: linear-gradient(91.66deg, #110a6a 26.05%, #6345da 104.52%);
     color: #ffffff;
 } 
+.link {
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
 /*============================
 Media Style Start Here
 ============================*/

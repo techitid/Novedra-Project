@@ -1119,5 +1119,44 @@
     </div>
   </div>
 <script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("registrationModal");
+  const form = document.getElementById("registrationForm");
+  const successMsg = document.getElementById("successMsg");
+
+  // ✅ Make these functions global
+  window.openModal = function () {
+    if (!modal || !form || !successMsg) return;
+    modal.style.display = "block";
+    form.style.display = "block";
+    successMsg.style.display = "none";
+  };
+
+  window.closeModal = function () {
+    if (!modal || !form || !successMsg) return;
+    modal.style.display = "none";
+    form.reset();
+    form.style.display = "block";
+    successMsg.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  };
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (form.checkValidity()) {
+        form.style.display = "none";
+        successMsg.style.display = "block";
+      }
+    });
+  }
+});
+</script>
 </body>
 </html>

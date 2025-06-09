@@ -70,38 +70,40 @@
     });
   });
 
- document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("registrationModal");
   const form = document.getElementById("registrationForm");
   const successMsg = document.getElementById("successMsg");
 
+  // ✅ Make functions global
   window.openModal = function () {
+    if (!modal) return;
     modal.style.display = "block";
-    form.style.display = "block";        // Ensure form is visible if reopened
-    successMsg.style.display = "none";   // Hide success message on reopen
+    form.style.display = "block";
+    successMsg.style.display = "none";
   };
 
   window.closeModal = function () {
+    if (!modal) return;
     modal.style.display = "none";
     form.reset();
     form.style.display = "block";
     successMsg.style.display = "none";
   };
 
-  // Close modal if clicked outside the form
-  window.onclick = function(event) {
+  window.onclick = function (event) {
     if (event.target === modal) {
       closeModal();
     }
   };
 
-  // Handle form submission
-  form.addEventListener("submit", function(e) {
-    e.preventDefault(); // prevent actual form submission
-
-    if (form.checkValidity()) {
-      form.style.display = "none";             // Hide form
-      successMsg.style.display = "block";      // Show success message
-    }
-  });
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (form.checkValidity()) {
+        form.style.display = "none";
+        successMsg.style.display = "block";
+      }
+    });
+  }
 });

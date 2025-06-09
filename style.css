@@ -1165,6 +1165,9 @@ Media Style Start Here
 	    font-size: 15px;
 	    padding: 10px;
 	}
+      .schedule-section .batch-card h3 { 
+            line-height: 100%; 
+        }
 }
 
 @media (max-width: 576px) {

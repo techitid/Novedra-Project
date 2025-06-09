@@ -71,22 +71,23 @@
     });
   });
 
-     const modal = document.getElementById("registrationModal");
+ document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("registrationModal");
   const form = document.getElementById("registrationForm");
   const successMsg = document.getElementById("successMsg");
 
-  function openModal() {
+  window.openModal = function () {
     modal.style.display = "block";
     form.style.display = "block";        // Ensure form is visible if reopened
     successMsg.style.display = "none";   // Hide success message on reopen
-  }
+  };
 
-  function closeModal() {
+  window.closeModal = function () {
     modal.style.display = "none";
     form.reset();
-    form.style.display = "block";        // Reset form visibility
-    successMsg.style.display = "none";   // Hide message again
-  }
+    form.style.display = "block";
+    successMsg.style.display = "none";
+  };
 
   // Close modal if clicked outside the form
   window.onclick = function(event) {
@@ -104,3 +105,5 @@
       successMsg.style.display = "block";      // Show success message
     }
   });
+});
+
